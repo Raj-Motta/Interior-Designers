@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Designers Inc.</title>
+
+    <!--ICON STYLE-->
+    <link rel = "icon" href = "Images/Fav-Icon.png">
+    <!--FONT AWESOME-->
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <!--CUSTOM STYLESHEET-->
+    <link rel = "stylesheet" href = "style.css">
+
+    <!--CUSTOM JS-->
+    <script defer src = "interactive.js"></script>
+</head>
+<body id = "home">
+    <div class = "page-division">
+        <navbar class = "navbar navbar-animate navbar-clm text-white bg-primary">
+            <h1 class = "navbar-title">Interior Designers Inc.</h1>
+
+            <ul class = "navbar-links navbar-distance">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#prev-design">Previous Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#designers">Designers</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#review">Write a Review</a></li>
+                <li><a href="Reviews.HTML">Customer Feedback</a></li>
+            </ul>
+        </navbar>
+
+        <div class = "InteriorDesign">
+            <div class = "container">
+                <h2 class = "l-header">Interior Design.</h2>
+
+                <div id = "prev-design">
+                    <h3 class = "m-header text-primary">Previous Projects:</h3>
+                    <img src = "Images/underline.png" alt = "_______" class = "text-primary underline-img">
+                    <div class = "items">
+                        <img class = "prev-design-img img item" src="Images/showcase-img-1.jpg" alt="Showcase Image 1" onclick="prevImg1()">
+                        <div class = "modal bg-translucent" id = "prev-img1" onclick="block()">
+                            <div class="container">
+                                <img class = "modal-img img" src="Images/showcase-img-1.jpg" alt="Showcase Image 1">
+                                <div class = "modal-description text-white">
+                                    <h2>Sheffield, England</h2>  
+                                    <div>Client: Moe Lester</div>
+                                    <div>Project Date: 04/12/2019</div>
+                                    <div>Project Duration: 6 months</div>
+                                    <div>Package Type: Advance Package</div>
+                                </div>                
+                            </div>
+                        </div> 
+                        <img class = "prev-design-img img item" src="Images/showcase-img-2.jpg" alt="Showcase Image 2" onclick="prevImg2()">
+                        <div class = "modal bg-translucent" id = "prev-img2" onclick="block()">
+                            <div class="container">
+                                <img class = "modal-img img" src="Images/showcase-img-2.jpg" alt="Showcase Image 2">
+                                <div class = "modal-description text-white">
+                                    <h2>Durban, South Africa</h2>  
+                                    <div>Client: Cly Media</div>
+                                    <div>Project Date: 06/05/2016</div>
+                                    <div>Project Duration: 1 year, 6 months</div>
+                                    <div>Package Type: Advance Package</div>
+                                </div>                
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "items">
+                        <img class = "prev-design-img img item" src="Images/showcase-img-3.jpg" alt="Showcase Image 3" onclick="prevImg3()">
+                        <div class = "modal bg-translucent" id = "prev-img3" onclick="block()">
+                            <div class="container">
+                                <img class = "modal-img img" src="Images/showcase-img-3.jpg" alt="Showcase Image 3">
+                                <div class = "modal-description text-white">
+                                    <h2>Stockholm, Sweden</h2>  
+                                    <div>Client: Herbie Hind</div>
+                                    <div>Project Date: 24/7/2020</div>
+                                    <div>Project Duration: 4 months</div>
+                                    <div>Package Type: Normal Package</div>
+                                </div>                
+                            </div>
+                        </div>
+                        <img class = "prev-design-img img item" src="Images/showcase-img-4.jpg" alt="Showcase Image 4" onclick="prevImg4()">
+                        <div class = "modal bg-translucent" id = "prev-img4" onclick="block()">
+                            <div class="container">
+                                <img class = "modal-img img" src="Images/showcase-img-4.jpg" alt="Showcase Image 4">
+                                <div class = "modal-description text-white">
+                                    <h2>California, USA</h2>  
+                                    <div>Client: Hugh Jass</div>
+                                    <div>Project Date: 16/01/2018</div>
+                                    <div>Project Duration: 6 months</div>
+                                    <div>Package Type: Advance Package</div>
+                                </div>                
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "items">
+                        <img class = "prev-design-img img item" src="Images/showcase-img-5.jpg" alt="Showcase Image 5" onclick="prevImg5()">
+                        <div class = "modal bg-translucent" id = "prev-img5" onclick="block()">
+                            <div class="container">
+                                <img class = "modal-img img" src="Images/showcase-img-5.jpg" alt="Showcase Image 5">
+                                <div class = "modal-description text-white">
+                                    <h2>Moscow, Russia</h2>  
+                                    <div>Client: Barry McKockiner</div>
+                                    <div>Project Date: 07/12/2021</div>
+                                    <div>Project Duration: 3 months</div>
+                                    <div>Package Type: Normal Package</div>
+                                </div>                
+                            </div>
+                        </div>
+                        <img class = "prev-design-img img item" src="Images/showcase-img-6.jpg" alt="Showcase Image 6" onclick="prevImg6()">
+                        <div class = "modal bg-translucent" id = "prev-img6" onclick="block()">
+                            <div class="container">
+                                <img class = "modal-img img" src="Images/showcase-img-6.jpg" alt="Showcase Image 6">
+                                <div class = "modal-description text-white">
+                                    <h2>Swindon, England</h2>  
+                                    <div>Client: E. Norma Scock</div>
+                                    <div>Project Date: 13/02/2019</div>
+                                    <div>Project Duration: 8 months</div>
+                                    <div>Package Type: Normal Package</div>
+                                </div>                
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div id = "services">
+                    <h3 class = "m-header text-primary">Services:</h3>
+                    <img src = "Images/underline.png" alt = "_______" class = "text-primary underline-img">
+                    <p>
+                                We are a interior design service that focus on what's best for your home and what's best for you!
+                    </p>
+                    <p>
+                                Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div id = "designers">
+                    <h3 class = "m-header text-primary">Designers:</h3>
+                    <img src = "Images/underline.png" alt = "_______" class = "text-primary underline-img">
+                    <p>The best team in the world.</p>
+                    
+                    <p>
+                        We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+
+                    <strong>Our Designers are thoughtfully chosen</strong>
+                    
+                    <div class = "items">
+                        <div class="item bg-gray" onclick="Design1()">
+                            <img class = "designers-img img" src = "Images/designer-img-1.jpg" alt = "designer 1">
+                            <div class = "designer-info">    
+                                <div class = "designers-name">Phil Mcrack</div>
+                                <div class = "designers-designation text-gray">CEO & Founder</div>
+                                <div class = "designers-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorem sequi sunt?</div>
+                            </div>
+                        </div>
+                        <div class = "modal bg-translucent" id = "design-info1" onclick="block()">
+                            <div class="container">
+                                <img class = "modal-img img" src="Images/designer-img-1.jpg" alt="designer 1">
+                                <div class = "modal-description text-white page-division">
+                                    <div>
+                                        <h2><strong>Name:</strong> Phil Mcrack</h2>  
+                                        <h3><strong>Designation:</strong> CEO & Founder</h3>
+                                        <div><strong>Years of Experience:</strong> 13 Years</div>
+                                        <div><strong>Projects Completed:</strong> 72 Projects</div>
+                                    </div>
+                                    <div>
+                                        <strong>Description:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quae, quaerat quibusdam unde consequatur accusantium optio veniam illo placeat id officia ut sequi aut adipisci sed assumenda at non error voluptates aspernatur, eius voluptatum dicta vero! Tempore reprehenderit ipsam distinctio!
+                                    </div>
+                                </div>                
+                            </div>
+                        </div>
+                        <div class="item bg-gray" onclick="Design2()">
+                            <img class = "designers-img img" src = "Images/designer-img-2.jpg" alt = "designer 2">
+                            <div class = "designer-info">    
+                                <div class = "designers-name">Ben Dover</div>
+                                <div class = "designers-designation text-gray">Designer & Decorator</div>
+                                <div class = "designers-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorem sequi sunt?</div>
+                            </div>
+                        </div>
+                        <div class = "modal bg-translucent" id = "design-info2" onclick="block()">
+                            <div class="container">
+                                <img class = "modal-img img" src="Images/designer-img-2.jpg" alt="designer 2">
+                                <div class = "modal-description text-white page-division">
+                                    <div>
+                                        <h2><strong>Name:</strong> Ben Dover</h2>  
+                                        <h3><strong>Designation:</strong> Designer & Decorator</h3>
+                                        <div><strong>Years of Experience:</strong> 9 Years</div>
+                                        <div><strong>Projects Completed:</strong> 51 Projects</div>
+                                    </div>
+                                    <div>
+                                        <strong>Description:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quae, quaerat quibusdam unde consequatur accusantium optio veniam illo placeat id officia ut sequi aut adipisci sed assumenda at non error voluptates aspernatur, eius voluptatum dicta vero! Tempore reprehenderit ipsam distinctio!
+                                    </div>
+                                </div>                
+                            </div>
+                        </div>
+                        <div class="item bg-gray" onclick = "Design3()">
+                            <img class = "designers-img img" src = "Images/designer-img-3.jpg" alt = "designer 3">
+                            <div class = "designer-info">
+                                <div class = "designers-name">Waine Kurr</div>
+                                <div class = "designers-designation text-gray">Architect</div>
+                                <div class = "designers-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorem sequi sunt?</div>
+                            </div>
+                        </div>
+                        <div class = "modal bg-translucent" id = "design-info3" onclick="block()">
+                            <div class="container">
+                                <img class = "modal-img img" src="Images/designer-img-3.jpg" alt="designer 3">
+                                <div class = "modal-description text-white page-division">
+                                    <div>
+                                        <h2><strong>Name:</strong> Waine Kurr</h2>  
+                                        <h3><strong>Designation:</strong> Architect</h3>
+                                        <div><strong>Years of Experience:</strong> 15 Years</div>
+                                        <div><strong>Projects Completed:</strong> 69 Project</div>
+                                    </div>
+                                    <div>
+                                        <strong>Description:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quae, quaerat quibusdam unde consequatur accusantium optio veniam illo placeat id officia ut sequi aut adipisci sed assumenda at non error voluptates aspernatur, eius voluptatum dicta vero! Tempore reprehenderit ipsam distinctio!
+                                    </div>
+                                </div>                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id = "packages">
+                    <h3 class = "m-header text-primary">Packages:</h3>
+                    <img src = "Images/underline.png" alt = "_______" class = "text-primary underline-img">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, nihil, sed cumque esse consequatur excepturi ea nam, debitis maiores accusamus eaque quaerat dolore? Numquam vitae atque iure ab. Pariatur, voluptates!</p>
+
+                    <div class = "items">
+                        <div class = "item text-center">
+                            <div class = "p-header text-white bg-dark">Basic</div>
+                            <div class = "p-description bg-gray">Floor Planning</div>
+                            <div class = "p-description bg-gray">10 Hours support</div>
+                            <div class = "p-description bg-gray">Photography</div>
+                            <div class = "p-description bg-gray">20% Furniture Discount</div>
+                            <div class = "p-description bg-gray">Good Deals</div>
+                            <div class = "p-description bg-gray">
+                                <div class = "p-cost">$199</div>
+                                <div class = "text-gray">Per Room</div>
+                            </div>
+                            <div class = "p-description bg-gray">
+                                <input autocomplete = "off" class = "btn btn-white p-btn" type="button" title = "Signing Up" value="Sign Up" onclick="basic()">
+                            </div>
+                        </div>
+                        <div class = "modal bg-translucent" id = "basic-signup">
+                            <div class = "modal-cross text-white" onclick="cross()">+</i></div>
+                            <div class="container bg-gray">
+                                <div>
+                                    <h2 class = "text-center text-gray">Enter Your Information to Sign Up for a Basic Level Consultation</h2>
+                                </div>
+                                <form class = "form-control">
+                                    <div class = "form-group">
+                                        <label for = "Bname">Name<span class = "text-primary"> *</span></label>
+                                        <input autocomplete = "off" class = "form-control bg-gray" type = "text" id = "Bname" title = "Please Insert Name"  required>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label for = "Bemail">Email<span class = "text-primary"> *</span></label>
+                                        <input autocomplete = "off" class = "form-control bg-gray" type = "email" id = "Bemail" title = "Please Insert Email"  required email>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label for = "Bphone">Phone Number<span class = "text-primary"> *</span></label>
+                                        <input autocomplete = "off" class = "form-control bg-gray" type = "number" id = "Bphone" title = "Please Insert Phone Number" required>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label for = "Baddress">Address<span class = "text-primary"> *</span></label>
+                                        <textarea class = "form-control bg-gray" type = "text" id = "Baddress" title = "Please Insert Address" required></textarea>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label for = "Bdate">Date of Consultation<span class = "text-primary"> *</span></label>                                        
+                                        <input autocomplete = "off" class = "form-control bg-gray" type = "Date" id = "Bdate" title = "Please Select Date" required>
+                                    </div>
+                                    <div class = "form-group">
+                                        <button class = "form-control btn btn-primary text-center" onclick="blockPackageBasic()" type = "submit"> Send Message </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class = "item text-center">
+                            <div class = "p-header text-white bg-primary">Advance</div>
+                            <div class = "p-description bg-gray">Floor Planning</div>
+                            <div class = "p-description bg-gray">50 Hours support</div>
+                            <div class = "p-description bg-gray">Photography</div>
+                            <div class = "p-description bg-gray">50% Furniture Discount</div>
+                            <div class = "p-description bg-gray"><span class = "capitalize">Great</span> Deals</div>
+                            <div class = "p-description bg-gray">
+                                <div class = "p-cost">$399</div>
+                                <div class = "text-gray">Per Room</div>
+                            </div>
+                            <div class = "p-description bg-gray">
+                                <input autocomplete = "off" class = "btn btn-primary p-btn" type="button" title = "Signing Up" value="Sign Up" onclick = "advance()">
+                            </div>
+                        </div>
+                        <div class = "modal bg-translucent" id = "advance-signup">
+                            <div class = "modal-cross text-white" onclick="cross()">+</div>
+                            <div class="container bg-gray">
+                                <div>
+                                    <h2 class = "text-center text-gray">Enter Your Information to Sign Up for a <span class = "text-primary">Advance</span> Level Consultation</h2>
+                                </div>
+                                <form class = "form-control">
+                                    <div class = "form-group">
+                                        <label for = "Aname">Name<span class = "text-primary"> *</span></label>
+                                        <input autocomplete = "off" class = "form-control bg-gray" type = "text" id = "Aname" title = "Please Insert Name" required>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label for = "Aemail">Email<span class = "text-primary"> *</span></label>
+                                        <input autocomplete = "off" class = "form-control bg-gray" type = "email" id = "Aemail" title = "Please Insert Email"  required email>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label for = "Aphone">Phone Number<span class = "text-primary"> *</span></label>
+                                        <input autocomplete = "off" class = "form-control bg-gray" type = "number" id = "Aphone" title = "Please Insert Phone Number" required>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label for = "Aaddress">Address<span class = "text-primary"> *</span></label>
+                                        <textarea class = "form-control bg-gray" type = "text" id = "Aaddress" title = "Please Insert Address" required></textarea>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label for = "Adate">Date of Consultation<span class = "text-primary"> *</span></label>                                        
+                                        <input autocomplete = "off" class = "form-control bg-gray" type = "Date" id = "Adate" title = "Please Select Date" required>
+                                    </div>
+                                    <div class = "form-group">
+                                        <button class = "form-control btn btn-primary text-center" onclick="blockPackageAdvance()" type = "submit"> Send Message </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id = "review">
+                    <div class = "review-form" id = "sendMessage">
+                        <h3 class = "m-header text-primary">Write A Review:</h3>
+                        <img src = "Images/underline.png" alt = "_______" class = "text-primary underline-img">
+                        <p>Loved our work? Write us a review and show everyone your experience working with us!</p>
+            
+                        <form class = "form-control">
+                            <div class = "form-group">
+                                <label for = "name">Name<span class = "text-primary"> *</span></label>
+                                <input autocomplete = "off" class = "form-control" type = "text" id = "name" title = "Please Insert Name" required>
+                            </div>
+            
+                            <div class = "form-group">
+                                <label for = "email">Email<span class = "text-primary"> *</span></label>
+                                <input autocomplete = "off" class = "form-control" type = "text" id = "email" title = "Please Insert Email" required email>
+                            </div>
+            
+                            <div class = "form-group">
+                                <label for = "phone">Phone Number<span class = "text-primary"> *</span></label>
+                                <input autocomplete = "off" class = "form-control" type = "number" id = "phone" title = "Please Insert Phone Number" required>
+                            </div>
+            
+                            <div class = "form-group">
+                                <label for = "message">Message<span class = "text-primary"> *</span></label>
+                                <textarea class = "form-control" type = "text" id = "message" title = "Please Insert Message" required></textarea>
+                            </div>
+
+                            <!--<div class = "form-group">
+                                <input autocomplete = "off" class = "form-control" type = "image" id = "picture" title = "Please Insert Image">
+                            </div>-->
+            
+                            <div class = "form-group">
+                                <button class = "form-control btn btn-primary text-center" onclick="sendMessage()"> Send Message </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <footer id = "page-footer" class = "bg-gray text-center">
+                <div>
+                    <p>
+                        Copyright &copy; 2021 Interior Designers Inc. All Rights Reserved
+                    </p>
+                    <p>
+                        Created by Group 01
+                    </p>
+                    <table>
+                        <thead>
+                            <th> Roll Number </th>
+                            <th id = "table-name-header"> Name </th>
+                        </thead>
+                        <tbody>
+                            <td> 01 </td>
+                            <td id = "table-name"> Yash Korla </td>
+                        </tbody>
+                        <tbody>
+                            <td> 02 </td>
+                            <td id = "table-name"> Raj Motta </td>
+                        </tbody>
+                        <tbody>
+                            <td> 03 </td>
+                            <td id = "table-name"> Siddique Sayed </td>
+                        </tbody>
+                        <tbody>
+                            <td> 04 </td>
+                            <td id = "table-name"> Sanmit Gangurde </td>
+                        </tbody>
+                    </table>
+                </div>
+            </footer>
+        </div>
+    </div>     
+</body>
+</html>
